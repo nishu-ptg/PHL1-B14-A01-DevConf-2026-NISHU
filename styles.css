@@ -2,3 +2,48 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eeeeee; /* light grey bg for now just to ensure header area is ok */
+}
+
+.container {
+  width: 1320px;
+  margin: auto;
+}
+
+header {
+  background-color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* min-height: 100px; */
+  padding: 30px 0; /* using padding to match height */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+header nav ul a {
+  color: #575757;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: white;
+  font-weight: bold;
+  padding: 12px 40px; /* using padding to match size */
+  border-radius: 8px;
+}
