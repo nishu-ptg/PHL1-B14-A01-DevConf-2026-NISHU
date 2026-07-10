@@ -10,6 +10,7 @@ a {
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #0d1b2a;
 }
 
 .container {
@@ -24,6 +25,13 @@ body {
   font-weight: bold;
   padding: 12px 40px; /* using padding to match size */
   border-radius: 8px;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0;
+  font-weight: 700;
 }
 
 /* header */
@@ -87,12 +95,6 @@ header nav ul a {
   padding: 20px 0 80px;
 }
 
-.speakers h2 {
-  font-size: 48px;
-  text-align: center;
-  margin: 50px 0;
-}
-
 .speakers ul {
   list-style: none;
   display: grid;
@@ -117,7 +119,6 @@ header nav ul a {
 }
 
 .speakers .name {
-  color: #0d1b2a;
   font-size: 22px;
   font-weight: 800;
   margin: 18px 0;
@@ -125,4 +126,93 @@ header nav ul a {
 
 .speakers .designation {
   color: #575757;
+}
+
+/* pricing section  */
+.pricing {
+  padding: 20px 0 80px;
+}
+
+.pricing h2 {
+  margin-bottom: 20px;
+}
+
+.pricing .duration {
+  color: #575757;
+  text-align: center;
+}
+
+.pricing .cards {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.pricing .cards > li {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #f8f9fb;
+  padding: 34px;
+}
+
+.pricing .cards .name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  color: #888888;
+}
+
+.pricing .cards .price {
+  font-weight: bold;
+  font-size: 44px;
+  margin: 6px 0;
+}
+
+.pricing .cards .head-count {
+  font-size: 13px;
+  color: #888888;
+}
+
+.pricing .cards hr {
+  border: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+.pricing .features {
+  list-style-position: inside; /* to stop going outside */
+  list-style-type: disc; /* filled up circle */
+}
+
+.pricing .features li {
+  margin: 16px 0;
+}
+
+.pricing .cards a {
+  display: block; /* full size */
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  margin-top: 20px;
+  padding: 16px;
+}
+
+.pricing .cards .selected {
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.pricing .cards .selected .price {
+  color: white;
+}
+
+.pricing .cards .selected a {
+  /* not using the common .btn class here
+  button should be blue for whichever price is selected 
+  not by the button's class itself */
+  background-color: #2563eb;
+  color: white;
 }
