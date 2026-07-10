@@ -81,3 +81,48 @@ header nav ul a {
   font-size: 24px;
   padding: 28px 64px;
 }
+
+/* speakers section */
+.speakers {
+  padding: 20px 0 80px;
+}
+
+.speakers h2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.speakers ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.speakers ul li {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden; /* to cut the top of the image */
+}
+
+.speakers ul li div {
+  padding: 24px;
+}
+
+.speakers .topic {
+  color: #2563eb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.speakers .name {
+  color: #0d1b2a;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 18px 0;
+}
+
+.speakers .designation {
+  color: #575757;
+}
