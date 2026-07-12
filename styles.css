@@ -198,7 +198,11 @@ header nav ul a {
 }
 
 .pricing .features li::marker {
-  color: blue; /* took help form ai to make it blue */
+  color: #2563eb; /* took help form ai to make it blue */
+}
+
+.pricing .selected .features li::marker {
+  color: #60a5fa;
 }
 
 .pricing .cards a {
@@ -254,4 +258,129 @@ footer .top ul a {
 
 footer .bottom ul a {
   color: #626b75;
+}
+
+/* hackathon section */
+.hackathon {
+  /* padding: 60px 0 80px; */
+  padding-bottom: 120px;
+}
+
+.hackathon .section-subtitle {
+  text-align: center;
+  color: #575757;
+  font-size: 18px;
+  max-width: 700px;
+  margin: -30px auto 50px;
+  line-height: 1.6;
+}
+
+.hackathon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.hackathon-card {
+  position: relative;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hackathon-card .card-content {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  /* height: 100px; */ /* forces alignment across cards */
+  flex-grow: 1;
+}
+
+.hackathon-card .badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.hackathon-card .prize-badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.hackathon-card .dynamic-badge {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.hackathon-card .track-tag {
+  color: #2563eb;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.hackathon-card h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d1b2a;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.hackathon-card p {
+  font-size: 14px;
+  color: #575757;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.hackathon-card .partner-tag {
+  font-size: 12px;
+  color: #888888;
+  font-weight: 500;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+  margin-top: auto;
+}
+
+/* Featured Dark Card to blend with pricing logic later */
+.hackathon-grid .featured-card {
+  background-color: #0d1b2a;
+  border-color: #0d1b2a;
+  color: white;
+}
+
+.hackathon-grid .featured-card h4 {
+  color: white;
+}
+
+.hackathon-grid .featured-card p {
+  color: #94a3b8;
+}
+
+.hackathon-grid .featured-card .track-tag {
+  color: #60a5fa;
+}
+
+.hackathon-grid .featured-card .partner-tag {
+  border-top-color: #1e293b;
 }
