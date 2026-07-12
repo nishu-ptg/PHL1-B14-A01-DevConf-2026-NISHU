@@ -61,7 +61,7 @@ header nav ul a {
 }
 
 /* hero section */
-.hero {
+#hero {
   height: 90vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -78,76 +78,76 @@ header nav ul a {
   text-align: center;
 }
 
-.hero div {
+#hero div {
   margin: 36px 0;
 }
 
-.hero h1 {
+#hero h1 {
   font-size: 80px;
   margin: 24px 0;
 }
 
-.hero p {
+#hero p {
   font-size: 22px;
   max-width: 800px;
 }
 
-.hero .btn {
+#hero .btn {
   font-size: 24px;
   padding: 22px 64px;
 }
 
 /* speakers section */
-.speakers {
+#speakers {
   padding: 20px 0 80px;
 }
 
-.speakers ul {
+#speakers ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
-.speakers ul li {
+#speakers ul li {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   overflow: hidden; /* to cut the top of the image */
 }
 
-.speakers ul li div {
+#speakers ul li div {
   padding: 24px;
 }
 
-.speakers .topic {
+#speakers .topic {
   color: #2563eb;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
 }
 
-.speakers .name {
+#speakers .name {
   font-size: 20px;
   font-weight: bold;
   margin: 12px 0;
 }
 
-.speakers .designation {
+#speakers .designation {
   color: #575757;
   font-size: 14px;
 }
 
 /* pricing section  */
-.pricing {
+#pricing {
   padding: 60px 0 80px;
 }
 
-.pricing .duration {
+#pricing .duration {
   color: #575757;
   text-align: center;
 }
 
-.pricing .cards {
+#pricing .cards {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -155,7 +155,7 @@ header nav ul a {
   margin: 50px 80px 0;
 }
 
-.pricing .cards > li {
+#pricing .cards > li {
   flex: 1;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
@@ -163,49 +163,49 @@ header nav ul a {
   padding: 34px;
 }
 
-.pricing .cards .name {
+#pricing .cards .name {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 13px;
   color: #888888;
 }
 
-.pricing .cards .price {
+#pricing .cards .price {
   font-weight: bold;
   font-size: 44px;
   margin: 6px 0 0;
 }
 
-.pricing .cards .head-count {
+#pricing .cards .head-count {
   font-size: 13px;
   color: #888888;
 }
 
-.pricing .cards hr {
+#pricing .cards hr {
   border: none;
   border-top: 1px solid #e5e7eb;
   margin: 22px 0;
 }
 
-.pricing .features {
+#pricing .features {
   list-style-position: inside; /* to stop going outside */
   list-style-type: disc; /* filled up circle */
 }
 
-.pricing .features li {
+#pricing .features li {
   font-size: 14px;
   margin: 14px 0;
 }
 
-.pricing .features li::marker {
+#pricing .features li::marker {
   color: #2563eb; /* took help form ai to make it blue */
 }
 
-.pricing .selected .features li::marker {
+#pricing .selected .features li::marker {
   color: #60a5fa;
 }
 
-.pricing .cards a {
+#pricing .cards a {
   display: block; /* full size */
   text-align: center;
   border-radius: 8px;
@@ -217,16 +217,16 @@ header nav ul a {
   font-weight: 600;
 }
 
-.pricing .cards .selected {
+#pricing .cards .selected {
   background-color: #0d1b2a;
   color: white;
 }
 
-.pricing .cards .selected .price {
+#pricing .cards .selected .price {
   color: white;
 }
 
-.pricing .cards .selected a {
+#pricing .cards .selected a {
   /* not using the common .btn class here
   button should be blue for whichever price is selected 
   not by the button's class itself */
@@ -261,12 +261,12 @@ footer .bottom ul a {
 }
 
 /* hackathon section */
-.hackathon {
+#hackathon {
   /* padding: 60px 0 80px; */
   padding-bottom: 120px;
 }
 
-.hackathon .section-subtitle {
+#hackathon .section-subtitle {
   text-align: center;
   color: #575757;
   font-size: 18px;
